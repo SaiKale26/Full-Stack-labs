@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune City Colleges</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        header nav {
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search-container {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background: #555;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .college-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .college-item {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(33.333% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .college-item h3 {
+            margin-top: 0;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MyColleges</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#colleges">Colleges</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for colleges...">
+            <button onclick="searchColleges()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Pune City Colleges</h2>
+            <p>Discover the best colleges in Pune city. Explore the top educational institutions and find the right fit for your higher education.</p>
+        </section>
+
+        <section id="colleges">
+            <h2>Top Colleges in Pune</h2>
+            <div class="college-list" id="college-list">
+                <div class="college-item">
+                    <h3>College of Engineering Pune (COEP)</h3>
+                    <p>One of the oldest engineering colleges in India, offering various undergraduate and postgraduate courses.</p>
+                    <a href="https://www.coep.org.in/">Click here to visit college website</a><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.986903933215!2d73.85168577876259!3d18.52949393761281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0883858b873%3A0x1d68fbf2cac75519!2sCOEP%20Technological%20University!5e0!3m2!1sen!2sin!4v1721801985767!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <div class="college-item">
+                    <h3>Fergusson College</h3>
+                    <p>A premier institution known for its arts and science programs, affiliated with Savitribai Phule Pune University.</p>
+                    <a href="https://www.fergusson.edu/" >Click here to visit college website</a><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15132.536103843955!2d73.8389678!3d18.5228446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf80982203c7%3A0xba2ba195e24b828a!2sFergusson%20College!5e0!3m2!1sen!2sin!4v1721801801224!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="college-item">
+                    <h3>Symbiosis International University</h3>
+                    <p>Renowned for its diverse programs and international collaborations, offering a range of undergraduate and postgraduate courses.</p>
+                    <a href="https://www.siu.edu.in/">Click here to visit college website</a><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.144321793902!2d73.82727807496299!3d18.52237918257147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c080cbf9d46b%3A0x742c13f60cc8ad3b!2sSymbiosis%20College%20Of%20Arts%20%26%20Commerce!5e0!3m2!1sen!2sin!4v1721802029634!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="college-item">
+                    <h3>MIT-WPU</h3>
+                    <p>encourages research in practically every domain, and endeavours to develop human knowledge through insight driven investigations, inventions, and understanding to create solutions for critical world problems.
+                    </p>
+                    <a href="https://mitwpu.edu.in/">Click here to visit college website</a><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2465835744138!2d73.81253627496281!3d18.517755882575283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb9e53a05f9%3A0x2be5e8da02be693e!2sMIT%20World%20Peace%20University%20(MIT-WPU)!5e0!3m2!1sen!2sin!4v1721801891917!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="college-item">
+
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>

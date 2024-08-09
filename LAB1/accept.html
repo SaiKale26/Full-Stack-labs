@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 10px 0;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            color: black;
+            background-color: lightgray;
+            height: 50px;
+            line-height: 50px; /* Center text vertically */
+        }
+        header nav {
+            text-align: center;
+            color: lightslategrey;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: lightslategrey;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .details {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 400px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .details label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .details input {
+            display: block;
+            margin-bottom: 20px; /* Space between input boxes */
+            padding: 5px;
+            width: calc(100% - 20px);
+            box-sizing: border-box;
+            font-size: 14px; /* Smaller font size */
+        }
+        .details button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .details button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MyDetails</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#places">places</a></li>
+                <li><a href="colleges.html">colleges</a></li>
+                <li><a href="#historical">historical</a></li>
+                <li><a href="#trekspots">trekspots</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="img-container">
+        <img src="pune.jpeg" alt="Pune City">
+    </div>
+    <div class="details">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name">
+        
+        <label for="contact">Contact:</label>
+        <input type="number" id="contact" placeholder="Enter contact no.">
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter address">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Age">
+
+        <button>Submit</button>
+    </div>
+</body>
+</html>

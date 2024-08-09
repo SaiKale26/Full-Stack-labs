@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit in Pune</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* External CSS equivalent */
+        
+        /* Tag Selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Class Selector */
+        .navbar-custom {
+            background-color: #343a40;
+        }
+
+        /* ID Selector */
+        #main-title {
+            color: #007bff;
+            margin: 20px 0;
+        }
+
+        /* Customizing form elements */
+        form {
+            margin: 20px 0;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Styling the table */
+        .table-custom {
+            border: 2px solid #007bff;
+            margin-top: 20px;
+        }
+
+        .table-custom th, .table-custom td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Background image */
+        .hero-section {
+            background-image: url('pune.jpeg'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        /* Internal CSS */
+        .section-title {
+            color: #007bff;
+            margin: 20px 0;
+        }
+
+        .list-group-item {
+            background-color: #f8f9fa;
+            border: 1px solid #007bff;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pune Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#places">Places to Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" target="_blank">About Pune</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1 id="main-title">Welcome to Pune</h1>
+        <p>Explore the cultural capital of Maharashtra</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h2 class="section-title" id="places">Top Places to Visit</h2>
+
+        <!-- Cards Section -->
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Shanivar_Wada.jpg" class="card-img-top" alt="Shaniwar Wada">
+                    <div class="card-body">
+                        <h5 class="card-title">Shaniwar Wada</h5>
+                        <p class="card-text">A historic fortification in the city, known for its architecture and cultural significance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sinhagad-fort-pune.jpg" class="card-img-top" alt="Sinhagad Fort">
+                    <div class="card-body">
+                        <h5 class="card-title">Sinhagad Fort</h5>
+                        <p class="card-text">A popular trekking destination with stunning views and historical importance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Pataleshwar_cave_temple.JPG" class="card-img-top" alt="Pataleshwar Temple">
+                    <div class="card-body">
+                        <h5 class="card-title">Pataleshwar Temple</h5>
+                        <p class="card-text">An ancient rock-cut cave temple dedicated to Lord Shiva, located in the heart of Pune.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <h3 class="section-title">Timings & Entry Fees</h3>
+        <table class="table table-custom">
+            <thead>
+                <tr>
+                    <th>Place</th>
+                    <th>Timings</th>
+                    <th>Entry Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shaniwar Wada</td>
+                    <td>9:00 AM - 6:30 PM</td>
+                    <td>INR 25</td>
+                </tr>
+                <tr>
+                    <td>Sinhagad Fort</td>
+                    <td>5:00 AM - 6:00 PM</td>
+                    <td>INR 20</td>
+                </tr>
+                <tr>
+                    <td>Pataleshwar Temple</td>
+                    <td>8:30 AM - 5:30 PM</td>
+                    <td>Free</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- List Section -->
+        <h3 class="section-title">Other Attractions</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Aga Khan Palace</li>
+            <li class="list-group-item">Raja Dinkar Kelkar Museum</li>
+            <li class="list-group-item">Lal Mahal</li>
+            <li class="list-group-item">Osho Ashram</li>
+        </ul>
+
+        <!-- Form Section -->
+        <h3 class="section-title" id="contact">Contact Us</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Pune Tourism. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
